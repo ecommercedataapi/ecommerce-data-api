@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.ecommercedataapi/ecommerce-data-api",
+  "title": "Ecommerce Data API",
+  "description": "Amazon product, keyword, sales estimate, reverse ASIN, market and trademark data for agents.",
+  "version": "1.0.0",
+  "websiteUrl": "https://ecommercedataapi.com/en/docs/mcp",
+  "repository": {
+    "url": "https://github.com/ecommercedataapi/ecommerce-data-api",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://ecommercedataapi.com/logo.svg",
+      "mimeType": "image/svg+xml"
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ecommercedataapi.com/mcp"
+    }
+  ]
+}

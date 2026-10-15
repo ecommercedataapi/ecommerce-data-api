@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Ecommerce Data API'
+  short_description: 'Discover and call Amazon ecommerce data APIs'
+  default_prompt: 'Use $ecommerce-data-api to find and call the right ecommerce data API for this task.'
