@@ -1,6 +1,6 @@
-# Ecommerce Data API — MCP server and Agent Skill
+# Ecommerce Data API — Amazon MCP server and Agent Skill
 
-Amazon seller data for AI agents: product research, sales estimates, keyword research and search volume, reverse ASIN keywords, competitors, reviews, market statistics and global trademarks. 46 endpoints across 13 marketplaces (US, UK, DE, FR, IT, ES, MX, CA, AU, JP, IN, AE, BR).
+Amazon seller data for AI agents: product research, sales estimates, keyword research and search volume, reverse ASIN keywords, competitors, reviews, market statistics and global trademarks. 46 endpoints across 13 marketplaces (US, UK, DE, FR, IT, ES, MX, CA, AU, JP, IN, AE, BR). Works with Claude, ChatGPT, Cursor, Codex, LangChain and any MCP client.
 
 This repository holds the public connection details and the Agent Skill. The service itself runs at [ecommercedataapi.com](https://ecommercedataapi.com/en).
 
@@ -35,7 +35,7 @@ Four discovery tools let an agent find and call any endpoint without loading all
 | `ecommerce_api_call`     | Call an endpoint with a validated request            |
 | `ecommerce_account`      | Check the account and remaining credits              |
 
-Every endpoint is also exposed as its own tool, for example `amazon_product_research`, `amazon_sales_prediction_asin`, `amazon_traffic_keyword` (reverse ASIN), `amazon_asin_competitor`, `amazon_keyword_research` and `amazon_review`. The full list is in the [API catalog](https://ecommercedataapi.com/en/docs/api-catalog).
+Every endpoint except OCR file upload (REST only) is also exposed as its own tool, 45 in all, for example `amazon_product_research`, `amazon_sales_prediction_asin`, `amazon_traffic_keyword` (reverse ASIN), `amazon_asin_competitor`, `amazon_keyword_research` and `amazon_review`. The full list is in the [API catalog](https://ecommercedataapi.com/en/docs/api-catalog).
 
 ## Agent Skill
 
@@ -52,6 +52,19 @@ Or install the Skill, the `ecomdata` CLI and a local stdio MCP in one step (macO
 ```bash
 curl -fsSL https://ecommercedataapi.com/install.sh | bash
 ```
+
+**API key instead of OAuth** — clients that cannot open a browser, such as a server-side agent, send `Authorization: Bearer <api-key>` to the same URL. Never put the key in the URL.
+
+## Examples
+
+[`examples/`](examples) has runnable scripts for plain REST in Python, a LangChain agent over MCP, and the OpenAI Responses API with remote MCP, plus a sample response.
+
+## How it differs
+
+- **No seller account needed.** Seller Central and SP-API based MCP servers read your own store's orders, inventory and ads. This one answers market questions about any public ASIN, keyword or category.
+- **Pay per call, no subscription.** Seller research suites usually gate API or MCP access behind a monthly plan. Here a call costs credits from a one-time pack, and MCP and REST share the same balance.
+- **One integration for the whole research loop.** Keyword demand, reverse ASIN, sales estimates, competitors, reviews, market statistics and trademarks come from one account with one schema style.
+- **Agent-first.** Discovery tools let an agent find and describe an endpoint before calling it, and the Agent Skill tells it to confirm before spending many credits.
 
 ## What the data is
 
@@ -78,4 +91,6 @@ New accounts get 5 free test calls once the email is verified, valid for 24 hour
 - Claude Code：`claude mcp add --transport http ecommerce-data-api https://ecommercedataapi.com/mcp`
 - Skill 安装：`npx skills add ecommercedataapi/ecommerce-data-api --skill ecommerce-data-api`
 - 新账号验证邮箱后送 5 次测试调用（24 小时内有效），之后按一次性调用包计费。
+- 不需要卖家账号，可查任意公开 ASIN、关键词和类目；按次计费，不用订阅。
+- 示例代码见 [`examples/`](examples)：Python REST、LangChain + MCP、OpenAI Responses API + MCP。
 - 文档：https://ecommercedataapi.com/docs

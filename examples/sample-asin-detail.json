@@ -1,0 +1,68 @@
+{
+  "request_id": "8fb43e59-4ff9-4dc8-a4b7-2ed164e45ab8",
+  "data": {
+    "asin": "B0DRVKZHK9",
+    "asinUrl": "https://www.amazon.com/dp/B0DRVKZHK9?th=1",
+    "availableDate": 1710345600000,
+    "brand": "Yitrust",
+    "brandUrl": "/stores/Yitrust/page/3440BDBD-A6C1-4DA6-800B-4EDA16B2F347?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto",
+    "bsrId": "beauty",
+    "bsrLabel": "Beauty & Personal Care",
+    "bsrRank": 58102,
+    "subcategories": [
+      {
+        "rank": 136,
+        "code": "11058221",
+        "label": "Hot-Air Hair Brushes"
+      }
+    ],
+    "createdTime": 1735855239000,
+    "dimensions": "1 x 1 x 1 inches",
+    "firstRatingDate": null,
+    "imageUrl": "https://m.media-amazon.com/images/I/4182p-TslhL._AC_US200_.jpg",
+    "lqs": 100,
+    "nodeId": 11058221,
+    "nodeIdPath": "3760911:11057241:11058091:11058221",
+    "nodeLabelPath": "Beauty & Personal Care:Hair Care:Styling Tools & Appliances:Hot-Air Brushes",
+    "nodeLabelPathLocale": null,
+    "parent": "B0DRVKZHK9",
+    "price": 73.99,
+    "primePrice": -1,
+    "deliveryPrice": -1,
+    "coupon": "",
+    "questions": null,
+    "rating": 4.6,
+    "ratings": 13,
+    "reviews": null,
+    "variantRatings": null,
+    "variantReviews": null,
+    "sellerId": "A3RB0UBY5ZAEAH",
+    "sellerName": "Yitrust",
+    "fulfillment": "FBA",
+    "sellers": 1,
+    "marketplace": "US",
+    "title": "6 in 1 Blow Dryer Brush, Hair Dryer with Diffuser for Curly Hair, Negative Ionic Hair Dryer Brush Set, Air Curling Iron Air Styler, Brush Blow Dryer Straight, Volumize, Drying Hair Styling Tool",
+    "updatedTime": 1740475874000,
+    "variations": 2,
+    "weight": "2.49 Pounds",
+    "zoomImageUrl": "https://m.media-amazon.com/images/I/4182p-TslhL._AC_US600_.jpg",
+    "skuList": ["Color: Black"],
+    "variationList": [
+      {
+        "asin": "B0CY5J4PKN",
+        "attribute": "Color: Black"
+      }
+    ],
+    "features": [
+      "NEW UPDATE 6 IN 1 HAIR DRYER BRUSH: The hair dryer brush set new with diffuser for women comes with 6 interchangeable brush attachments that make 1*narrow hairdryer head, 2* left/right direction air hair wrapping curling iron, 1*hair straightener brush, 1* volumizing brush, 1*..."
+    ],
+    "overviews": "{\"Brand\":\"Yitrust\",\"Color\":\"Black\",\"Material\":\"Plastic\",\"Wattage\":\"1000 watts\",\"Power Source\":\"Corded Electric\"}",
+    "badge": {
+      "bestSeller": "N",
+      "amazonChoice": "N",
+      "newRelease": "N",
+      "ebc": "Y",
+      "video": "Y"
+    }
+  }
+}
