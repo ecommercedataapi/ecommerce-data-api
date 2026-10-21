@@ -1,0 +1,13 @@
+{
+  "name": "ecommerce-data-api",
+  "version": "1.0.0",
+  "description": "Amazon seller data for agents: product research, sales estimates, keyword search volume, reverse ASIN, competitors, reviews, market statistics and global trademarks. Bundles the remote MCP server and the Agent Skill.",
+  "author": {
+    "name": "Ecommerce Data API",
+    "url": "https://ecommercedataapi.com"
+  },
+  "homepage": "https://ecommercedataapi.com/en/docs/mcp",
+  "repository": "https://github.com/ecommercedataapi/ecommerce-data-api",
+  "license": "MIT",
+  "keywords": ["amazon", "ecommerce", "seller", "product-research", "keyword-research", "reverse-asin", "sales-estimate", "trademark", "mcp"]
+}

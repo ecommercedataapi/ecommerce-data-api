@@ -12,7 +12,13 @@ https://ecommercedataapi.com/mcp
 
 Streamable HTTP with OAuth 2.1 (PKCE). The client opens a browser to sign in; no API key goes into the configuration.
 
-**Claude Code**
+**Claude Code** — install the plugin, which bundles the remote MCP server and the Agent Skill:
+
+```
+/plugin install ecommerce-data-api --marketplace ecommercedataapi/ecommerce-data-api
+```
+
+On Claude Code older than 2.1.275, run `/plugin marketplace add ecommercedataapi/ecommerce-data-api` first, then `/plugin install ecommerce-data-api@ecommerce-data-api`. To add only the MCP server:
 
 ```bash
 claude mcp add --transport http ecommerce-data-api https://ecommercedataapi.com/mcp
@@ -72,7 +78,7 @@ Sales, revenue and search volume figures are **estimates** modelled from public 
 
 ## Pricing
 
-New accounts get 5 free test calls once the email is verified, valid for 24 hours. After that, calls are billed from one-time credit packs starting at 50 calls; there is no subscription. See [pricing](https://ecommercedataapi.com/en/pricing).
+New accounts get a few free test calls once the email is verified; the current amount and validity are in [llms.txt](https://ecommercedataapi.com/llms.txt). After that, calls are billed from one-time credit packs starting at 50 calls, or from monthly and yearly plans that cost less per call. See [pricing](https://ecommercedataapi.com/en/pricing).
 
 ## Links
 
@@ -88,9 +94,10 @@ New accounts get 5 free test calls once the email is verified, valid for 24 hour
 面向 AI Agent 的 Amazon 卖家数据：选品、销量估算、关键词搜索量、反查 ASIN、竞品、评论、市场统计和全球商标，共 46 个接口，覆盖 13 个站点。
 
 - 远程 MCP 地址：`https://ecommercedataapi.com/mcp`，浏览器 OAuth 登录，配置里不需要写 API Key。
-- Claude Code：`claude mcp add --transport http ecommerce-data-api https://ecommercedataapi.com/mcp`
+- Claude Code 插件（含 MCP 和 Skill）：`/plugin install ecommerce-data-api --marketplace ecommercedataapi/ecommerce-data-api`
+- 只加 MCP：`claude mcp add --transport http ecommerce-data-api https://ecommercedataapi.com/mcp`
 - Skill 安装：`npx skills add ecommercedataapi/ecommerce-data-api --skill ecommerce-data-api`
-- 新账号验证邮箱后送 5 次测试调用（24 小时内有效），之后按一次性调用包计费。
+- 新账号验证邮箱后送少量测试调用（当前次数和有效期见 llms.txt），之后按一次性调用包或月付/年付套餐计费。
 - 不需要卖家账号，可查任意公开 ASIN、关键词和类目；按次计费，不用订阅。
 - 示例代码见 [`examples/`](examples)：Python REST、LangChain + MCP、OpenAI Responses API + MCP。
 - 文档：https://ecommercedataapi.com/docs

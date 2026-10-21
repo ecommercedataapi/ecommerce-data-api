@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ecommerce-data-api": {
+      "type": "http",
+      "url": "https://ecommercedataapi.com/mcp"
+    }
+  }
+}

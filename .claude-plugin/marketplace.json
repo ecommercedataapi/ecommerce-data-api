@@ -1,0 +1,15 @@
+{
+  "name": "ecommerce-data-api",
+  "description": "Amazon seller data for Claude Code: remote MCP server and Agent Skill",
+  "owner": {
+    "name": "Ecommerce Data API",
+    "url": "https://ecommercedataapi.com"
+  },
+  "plugins": [
+    {
+      "name": "ecommerce-data-api",
+      "source": "./",
+      "description": "Amazon product, keyword, sales estimate, reverse ASIN, market and trademark data for agents"
+    }
+  ]
+}
