@@ -9,5 +9,19 @@
   "homepage": "https://ecommercedataapi.com/en/docs/mcp",
   "repository": "https://github.com/ecommercedataapi/ecommerce-data-api",
   "license": "MIT",
-  "keywords": ["amazon", "ecommerce", "seller", "product-research", "keyword-research", "reverse-asin", "sales-estimate", "trademark", "mcp"]
+  "keywords": [
+    "amazon",
+    "ecommerce",
+    "seller",
+    "product-research",
+    "keyword-research",
+    "reverse-asin",
+    "sales-estimate",
+    "trademark",
+    "mcp"
+  ],
+  "privacyPolicyUrl": "https://ecommercedataapi.com/en/privacy-policy",
+  "termsOfServiceUrl": "https://ecommercedataapi.com/en/terms-of-service",
+  "documentationUrl": "https://ecommercedataapi.com/en/docs/mcp",
+  "supportUrl": "https://ecommercedataapi.com/en/contact"
 }

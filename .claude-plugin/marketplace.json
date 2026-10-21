@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "ecommerce-data-api",
-      "source": "./",
+      "source": "./plugins/ecommerce-data-api",
       "description": "Amazon product, keyword, sales estimate, reverse ASIN, market and trademark data for agents"
     }
   ]
